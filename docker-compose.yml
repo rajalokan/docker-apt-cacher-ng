@@ -3,7 +3,8 @@ version: '2'
 services:
   apt-cacher-ng:
     restart: always
-    image: sameersbn/apt-cacher-ng:latest
+    container_name: apt-cacher-ng
+    image: rajalokan/apt-cacher-ng
     ports:
     - "3142:3142"
     volumes:
